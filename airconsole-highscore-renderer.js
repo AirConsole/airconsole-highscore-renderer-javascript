@@ -6,12 +6,18 @@
  *                                          Default is all.
  * @param {number|undefined} avatar_size -  The size of the avatar pictures.
  *                                          Default is 40.
+ * @param {boolean} include_flags - If true, adds country flags to high scores.
+ *                                  Default: true
+ *
  *
  */
 function AirConsoleHighScoreRenderer(high_scores, element, ranks,
-                                     avatar_size) {
+                                     avatar_size, include_flags) {
   if (avatar_size == undefined) {
     avatar_size = 40;
+  }
+  if (include_flags == undefined) {
+    include_flags = true;
   }
   element.innerHTML = "";
   var lists = {};
@@ -83,6 +89,11 @@ function AirConsoleHighScoreRenderer(high_scores, element, ranks,
             "profile-picture?size=" + avatar_size + "&uid=" + hs.uids[i];
         img.width = avatar_size;
         img.height = avatar_size;
+        if (include_flags) {
+          $("div", "flag", player).className +=
+              " airconsole-highscore-renderer-flag-" +
+              (hs.location_country_code || "");
+        }
         $("div", "nickname", player).textContent = hs.nicknames[i];
       }
       $("div", "score", entry).textContent = hs.score_string;
