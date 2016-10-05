@@ -1,0 +1,89 @@
+.airconsole-highscore-renderer-list {
+    display: inline-block;
+    width: 240px;
+    margin: 10px;
+    background-color: #1f1f1f;
+    color: white;
+    vertical-align: top;
+}
+
+.airconsole-highscore-renderer-title {
+    font-size: 200%;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #3b3b3b;
+}
+
+.airconsole-highscore-renderer-entry {
+    border-top: 1px solid #3b3b3b;
+    color: #aaa;
+    padding: 7px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.airconsole-highscore-renderer-entry-highlight {
+    background-color: #3b3b3b;
+    color: #fff;
+}
+
+.airconsole-highscore-renderer-player {
+    display: inline-block;
+}
+
+.airconsole-highscore-renderer-avatar {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.airconsole-highscore-renderer-rank {
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    font-size: 200%;
+    background-color: #1f1f1f;
+}
+
+.airconsole-highscore-renderer-nickname {
+    display: inline-block;
+}
+
+.airconsole-highscore-renderer-entry-highlight .airconsole-highscore-renderer-rank {
+    color: #ADEE00;
+    background-color: #3b3b3b;
+}
+
+
+.airconsole-highscore-renderer-entry-multiplayer {
+    padding-top: 27px;
+    padding-left: 7px;
+}
+
+.airconsole-highscore-renderer-entry-multiplayer .airconsole-highscore-renderer-player {
+    margin-bottom: 2px;
+    display: block;
+}
+
+.airconsole-highscore-renderer-entry-multiplayer .airconsole-highscore-renderer-avatar {
+    position: relative;
+    top: 5px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    margin-top: -5px;
+}
+
+.airconsole-highscore-renderer-entry-multiplayer .airconsole-highscore-renderer-score {
+    color: white;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
