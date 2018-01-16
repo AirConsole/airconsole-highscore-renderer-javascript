@@ -87,8 +87,6 @@ function AirConsoleHighScoreRenderer(high_scores, element, ranks,
         var img = $("img", "avatar", player);
         img.src = "https://www.airconsole.com/api/" +
             "profile-picture?size=" + avatar_size + "&uid=" + hs.uids[i];
-        img.width = avatar_size;
-        img.height = avatar_size;
         if (include_flags) {
           $("div", "flag", player).className +=
               " airconsole-highscore-renderer-flag-" +
